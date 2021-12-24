@@ -38,9 +38,14 @@ export default function About() {
   }, [location]);
   return (
     <div>
+
       <Navbarcomp />
       <div id="showWeather">
+         
         <div className="city">
+        {/* <Image src="https://cdn3.iconfinder.com/data/icons/nature-37/120/aeaaqqdqas-512.png" width={100} height={100}></Image> */}
+        {/* <p>click on the city name </p> */}
+      
           <ListGroup variant="flush">
             <ListGroup.Item
               onClick={(e) => {
@@ -78,10 +83,12 @@ export default function About() {
 
             <h4> Temp : {weather.temp}</h4>
             <h4> Country : {weather.country}</h4>
+            {/* <h4> Time : {weather.localtime}</h4> */}
+
             <Image
               src={weather.icon}
               alt="image From Api"
-              width={150}
+              width={100}
               className="ImageFApi"
             ></Image>
           </div>
