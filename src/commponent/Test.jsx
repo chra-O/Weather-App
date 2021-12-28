@@ -1,18 +1,18 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import { ListGroup, Image } from "react-bootstrap";
 import Navbarcomp from "./Navbarcomp";
-//the key from my account 
-const API_KEY = " 8c9d65789dd945a38b9123103212112"; 
+import { ListGroup, Image } from "react-bootstrap";
+import { useEffect, useState } from "react";
+const API_KEY = " 8c9d65789dd945a38b9123103212112";
 let localCache = {};
-export default function About() {
-  const [location, setLocation] = useState("Arbil");
+
+export default function Test() {
+  const [location, setLocation] = useState("London");
   const [weather, setWeather] = useState({
     city: location,
-    country: "Iraq",
-    localtime: "2021-12-21 15:14",
-    icon: "//cdn.weatherapi.com/weather/64x64/day/119.png",
-    temp: 10,
+    country: "United Kingdom",
+    localtime: "2021-12-28 10:59",
+    icon: "//cdn.weatherapi.com/weather/64x64/day/116.png",
+    temp: 9.0,
   });
   const updateWeather = async () => {
     if (localCache[location]) {
@@ -39,42 +39,37 @@ export default function About() {
   }, [location]);
   return (
     <div>
-
       <Navbarcomp />
       <div id="showWeather">
-         
         <div className="city">
-        {/* <Image src="https://cdn3.iconfinder.com/data/icons/nature-37/120/aeaaqqdqas-512.png" width={100} height={100}></Image> */}
-        {/* <p>click on the city name </p> */}
-      
           <ListGroup variant="flush">
             <ListGroup.Item
               onClick={(e) => {
-                setLocation("Sulaymaniyah");
+                setLocation("Birmingham");
               }}
             >
-              Sulimany
+              Birmingham
             </ListGroup.Item>
             <ListGroup.Item
               onClick={(e) => {
-                setLocation("Arbil");
+                setLocation("London");
               }}
             >
-              Erbil
+              London
             </ListGroup.Item>
             <ListGroup.Item
               onClick={(e) => {
-                setLocation("Karkuk");
+                setLocation("Manchester");
               }}
             >
-              Karkuk
+              Manchester
             </ListGroup.Item>
             <ListGroup.Item
               onClick={(e) => {
-                setLocation("Duhok");
+                setLocation("Glasgow");
               }}
             >
-              Duhok
+              Glasgow
             </ListGroup.Item>
           </ListGroup>
         </div>

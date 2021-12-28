@@ -12,9 +12,11 @@ export default function Navbarcomp() {
             <Link to="/" className="navbarlinkStyle">
               Home
             </Link>
-
             <Link to="/about" className="navbarlinkStyle">
-              Weather
+              Iraq
+            </Link>{" "}
+            <Link to="/test" className="navbarlinkStyle">
+            United Kingdom
             </Link>
           </Nav>
         </Container>
