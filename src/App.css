@@ -14,9 +14,12 @@
 .herocontinor {
   display: flex;
 }
+.wetgerimage {
+  width: 800px;
+}
 .about {
   width: 50%;
-  /* background-color: rgba(166, 214, 226, 0.932); */
+
   height: 400px;
   display: flex;
   align-items: center;
@@ -32,15 +35,6 @@
   margin-top: 20px;
   margin-left: 5px;
   font-size: 20px;
-}
-.howtouse {
-  width: 100%;
-  height: 200px;
-  background-color: rgba(17, 89, 172, 0.459);
-  padding-bottom: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .navbarlinkStyle {
@@ -63,9 +57,9 @@
 }
 .showinformation {
   width: 400px;
-  /* background-color: blanchedalmond; */
+
   height: 600px;
- 
+
   margin-left: 150px;
 }
 h4 {
@@ -75,6 +69,141 @@ h4 {
   margin-top: 200px;
 }
 .ImageFApi {
- 
   margin-top: 50px;
+}
+/* toggle */
+.active {
+  width: 30px;
+}
+
+.inactive {
+  width: 30px;
+}
+
+/* this is for responsvilaty  */
+@media only screen and (max-width: 600px) {
+  .herocontinor {
+    display: inline;
+  }
+  .about {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 200px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .wetgerimage {
+    width: 400px;
+    padding: 0px;
+  }
+  /* api page  */
+  #showWeather {
+    width: 90%;
+    display: inline;
+    height: 100px;
+  }
+  .city {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: black;
+    font-size: 20px;
+  }
+  .showinformation {
+    width: 200px;
+
+    margin-left: 100px;
+  }
+  h4 {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .herocontinor {
+    display: inline;
+  }
+  .about {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 200px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .wetgerimage {
+    width: 500px;
+    padding: 0px;
+  }
+  /* api page  */
+  #showWeather {
+    width: 100%;
+    display: inline;
+    height: 100px;
+  }
+  .city {
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: black;
+    font-size: 20px;
+  }
+  .showinformation {
+    width: 250px;
+
+    margin-left: 220px;
+  }
+  h4 {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .herocontinor {
+    display: inline;
+  }
+  .about {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 200px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .wetgerimage {
+    width: 700px;
+    padding: 0px;
+  }
+  /* api page  */
+  #showWeather {
+    width: 100%;
+    display: inline;
+    height: 100px;
+  }
+  .city {
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 15%;
+    color: black;
+    font-size: 20px;
+  }
+  .showinformation {
+    width: 200px;
+
+    /* height: 300px; */
+
+    margin-left: 37%;
+  }
+  h4 {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .wetgerimage {
+    width: 700px;
+    padding: 0px;
+  }
 }

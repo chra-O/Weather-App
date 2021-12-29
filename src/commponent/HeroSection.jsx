@@ -11,11 +11,12 @@ export default function HeroSection() {
             Useing WeatherApi
           </div>
 
-          <div className="wetgerimage">
+          <div>
             <Image
+             className="wetgerimage"
               src="https://cdn.dribbble.com/users/1353252/screenshots/7430583/media/f456446ffc1c9a1608b94d6d136dbc0d.gif"
               alt="animathion"
-              width={800}
+              // width={800}
             />
           </div>
         </Container>
