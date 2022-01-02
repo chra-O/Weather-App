@@ -2,10 +2,10 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { ListGroup, Image } from "react-bootstrap";
 import Navbarcomp from "./Navbarcomp";
-//the key from my account 
-const API_KEY = " 8c9d65789dd945a38b9123103212112"; 
+//the key from my account
+const API_KEY = " 8c9d65789dd945a38b9123103212112";
 let localCache = {};
-export default function About() {
+export default function Iraq() {
   const [location, setLocation] = useState("Arbil");
   const [weather, setWeather] = useState({
     city: location,
@@ -39,14 +39,9 @@ export default function About() {
   }, [location]);
   return (
     <div>
-
       <Navbarcomp />
       <div id="showWeather">
-         
         <div className="city">
-        {/* <Image src="https://cdn3.iconfinder.com/data/icons/nature-37/120/aeaaqqdqas-512.png" width={100} height={100}></Image> */}
-        {/* <p>click on the city name </p> */}
-      
           <ListGroup variant="flush">
             <ListGroup.Item
               onClick={(e) => {
@@ -84,7 +79,6 @@ export default function About() {
 
             <h4> Temp : {weather.temp}</h4>
             <h4> Country : {weather.country}</h4>
-            {/* <h4> Time : {weather.localtime}</h4> */}
 
             <Image
               src={weather.icon}

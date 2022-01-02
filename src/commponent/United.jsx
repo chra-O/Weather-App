@@ -2,15 +2,16 @@ import React from "react";
 import Navbarcomp from "./Navbarcomp";
 import { ListGroup, Image } from "react-bootstrap";
 import { useEffect, useState } from "react";
+// key from WeatherApi Account
 const API_KEY = " 8c9d65789dd945a38b9123103212112";
+// this help to Do not call API if the request has been done befor
 let localCache = {};
-
-export default function Test() {
+/////////////////////////////
+export default function United() {
   const [location, setLocation] = useState("London");
   const [weather, setWeather] = useState({
     city: location,
     country: "United Kingdom",
-    localtime: "2021-12-28 10:59",
     icon: "//cdn.weatherapi.com/weather/64x64/day/116.png",
     temp: 9.0,
   });
@@ -37,6 +38,8 @@ export default function Test() {
   useEffect(() => {
     updateWeather();
   }, [location]);
+
+  //////////////////////
   return (
     <div>
       <Navbarcomp />
@@ -76,11 +79,8 @@ export default function Test() {
         <div className="showinformation">
           <div className="h2Content">
             <h4> City : {weather.city} </h4>
-
             <h4> Temp : {weather.temp}</h4>
             <h4> Country : {weather.country}</h4>
-            {/* <h4> Time : {weather.localtime}</h4> */}
-
             <Image
               src={weather.icon}
               alt="image From Api"

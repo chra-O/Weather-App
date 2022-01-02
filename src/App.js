@@ -1,17 +1,17 @@
 import "./App.css";
 import Home from "./commponent/Home";
-
 import { Routes, Route } from "react-router-dom";
-import About from "./commponent/About";
-import Test from "./commponent/Test";
+import Iraq from "./commponent/Iraq";
+import United from "./commponent/United";
 
 function App() {
   return (
     <div className="App">
+      {/* this is Router to create our route */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/Iraq" element={<Iraq />} />
+        <Route path="/United" element={<United />} />
       </Routes>
     </div>
   );
